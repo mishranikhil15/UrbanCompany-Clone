@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            height: 80px;
+            background-color: aliceblue;
+            justify-content: space-between;
+            padding: 0px 150px 0px 50px;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        .nav>div {
+            display: flex;
+            justify-content: space-between;
+            /* width: 550px; */
+            border: 1px solid red;
+            height: 100%;
+            align-items: center;
+        }
+
+        .nav>div>h3 {
+            margin: 20px;
+        }
+
+        .nav>div>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid black;
+        }
+
+        .top>div:nth-child(1) {
+            border: 1px solid red;
+            width: 50%;
+            /* justify-content: flex-end; */
+
+        }
+
+        .top>div>img {
+            width: 80%;
+            height: 100%;
+        }
+
+        .top>div:nth-child(2) {
+            border: 1px solid blue;
+            width: 45%;
+        }
+
+        .top-sec {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: cadetblue;
+
+        }
+
+        .top-sec>div {
+            padding: 50px;
+        }
+
+        .top-sec>div:nth-child(2) {
+            border: 1px solid black;
+            width: 50%;
+            border-radius: 8px;
+            margin-left: 50px;
+            color: black;
+            background-color: white;
+
+        }
+
+        .top-sec>div:nth-child(2)>h4 {
+            margin-bottom: 20px;
+        }
+
+        #select {
+            width: 100%;
+            padding: 3px 20px 5px 3px;
+
+        }
+
+        .top-last {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+            border: 1px solid blue;
+        }
+
+        .top-last-in {
+            display: flex;
+
+        }
+
+        .top-last-in>div {
+            margin: 10px 0px 10px 0px;
+        }
+
+        .top-last-in>div>img {
+            width: 50%;
+        }
+
+        .top-last>div>h1 {
+            padding-bottom: 40px;
+            font-size: 35px;
+        }
+
+        .top-last>div:nth-child(2)>div>img {
+
+            width: 25%;
+            padding-bottom: 40px;
+        }
+
+        .top-last>div:nth-child(2) {
+            background-color: rgb(239, 248, 248);
+            width: 35%;
+            height: 320px;
+            margin: 30px;
+            padding: 50px;
+        }
+
+        .top-last>div:nth-child(2)>div>h2 {
+            padding-bottom: 20px;
+        }
+
+        .medium {
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid black;
+            margin-top: 15px;
+            height: auto;
+        }
+
+        .medium>div:nth-child(1) {
+            border: 1px solid red;
+            margin-top: 53px;
+            width: 45%;
+            padding: 90px;
+            /* margin-right: 180px; */
+
+        }
+
+        .medium>div:nth-child(1)>div {
+            padding: 30px;
+        }
+
+        .medium>div:nth-child(1)>div:nth-child(3)>img {
+            width: 30%;
+        }
+
+        label {
+            position: relative;
+            display: flex;
+        }
+
+        #mob>input {
+            /* border: none; */
+            padding: 15px;
+            width: 500px;
+        }
+
+        #mob>button {
+
+            padding: 8px;
+            /* padding: 0px 15px; */
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: teal;
+            color: white;
+            text-align: center;
+            margin: 10px;
+            /* font-size: 20px; */
+        }
+
+        /* .medium>div:nth-child(2)>img:nth-child(2){
+            height: 80%; */
+        /* width: 40%;
+
+        } */
+
+        */
+
+        /* .medium>div:nth-child(2)>img:nth-child(1){
+            height: 80%;
+            width: 40%;
+
+        } */
+        .medium>div:nth-child(2) {
+            margin-top: 53px;
+            border: 1px solid blue;
+            width: 70%;
+        }
+
+        #medium-last {
+            display: flex;
+            justify-content: space-evenly;
+            border: 1px solid blue;
+            width: 100%;
+            margin-top: 53px;
+            /* height: auto; */
+        }
+        #medium-last>div:nth-child(1)>img{
+            width: 90%;
+            height: 90%;
+            padding-top: 30px;
+        }
+        #medium-last>div:nth-child(2)>img{
+            width: 90%;
+            height: 90%;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div>
+            <img src="C:\Users\HP\Downloads\urban-needs-low-resolution-logo-black-on-white-background.png" alt="">
+        </div>
+        <div>
+            <h3>Blog</h3>
+            <!-- <h3>Register As A Professional</h3> -->
+            <a href="">Register As A Professional</a>
+            <h3>Login/Sign Up</h3>
+            <!-- <a href="">Login/Sign Up</a> -->
+        </div>
+    </div>
+    <div class="top">
+        <div>
+            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_19be5040.jpeg"
+                alt="">
+        </div>
+        <div class="top-sec">
+            <div>
+                <h2>URBAN COMPANY</h2>
+                <h1>Quality home services, on demand</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, porro!</p>
+
+            </div>
+            <div>
+                <h4>Where do we need a service?</h4>
+                <!-- <input type="text" placeholder="select your city"> -->
+                <select name="" id="select">
+                    <option value="sel">Select your city</option>
+                    <option value="del">New Delhi</option>
+                    <option value="york">New York</option>
+                    <option value="aus">Austin</option>
+                </select>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="top-last">
+        <div>
+            <h1>Why Urban Company?</h1>
+            <div class="top-last-in">
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_29614d40.png"
+                        alt="">
+                </div>
+                <div>
+                    <h4>Transparent pricing</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+
+            </div>
+            <div class="top-last-in">
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_2cc7d0d0.png"
+                        alt="">
+                </div>
+                <div>
+                    <h4>Experts only</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+
+            </div>
+            <div class="top-last-in">
+                <div>
+                    <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_29614d40.png"
+                        alt="">
+                </div>
+                <div>
+                    <h4>Fully equipped</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/q_20,f_auto/categories/category_v2/category_cb4d9130.png"
+                    alt="">
+            </div>
+            <div>
+                <h2>100% Quality Assured</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="medium">
+        <div>
+            <div>
+                <h1>Book Professionals from your phone</h1>
+                <p>Enter your mobile number to get the Appdownload link</p>
+            </div>
+            <div>
+                <label for="" id="mob">
+                    <input type="text" placeholder="Enter your Number">
+                    <button>send</button>
+                </label>
+
+            </div>
+            <div>
+                <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f907eb0.png"
+                    alt="">
+                <img src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f741d10.png"
+                    alt="">
+            </div>
+
+        </div>
+        <div id="medium-last">
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/w_300,f_auto/categories/category_v2/category_2d7045d0.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/urbanclap/image/upload/w_350,f_auto/categories/category_v2/category_2d013050.png"
+                    alt="">
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
