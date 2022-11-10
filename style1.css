@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#background_img {
+    background: rgba(0, 0, 0, 0.8) url(https://res.cloudinary.com/urbanclap/image/upload/images/growth/home-screen/1615375782838-f890f8.jpeg);
+    /* background-blend-mode: darken; */
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+    /* margin-top: -25px; */
+    /* background-position: center top; */
+}
+
+#nav {
+    display: flex;
+    height: 90px;
+    /* background-color: aliceblue; */
+    justify-content: space-between;
+    padding: 0px 150px 0px 50px;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* background-color: black; */
+    color: whitesmoke;
+    border: 1px solid red;
+}
+
+a {
+    color: white;
+}
+
+#nav>div {
+    display: flex;
+    justify-content: space-between;
+    /* width: 550px; */
+    /* border: 1px solid red; */
+    height: 100%;
+    align-items: center;
+}
+
+#nav>div>h3 {
+    margin: 20px;
+}
+
+#nav>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+#after-nav>div {}
+
+#after-nav0 {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* 
+#after-nav1{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    height: 150px;
+    width: 55%;
+    margin: auto;
+    align-items: center;
+    margin-top: 230px;
+    background-color: white;
+    padding: 30px;
+}
+#after-nav1>div>img{
+    padding: 45px;
+    width: 80%;
+    border: 1px solid black;
+
+} */
+#after-nav1 {
+    /* border: 1px solid red; */
+    height: 170px;
+    width: 60%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 2px 5px rgb(130, 126, 126);
+    display: flex;
+    margin: auto;
+    margin-top: 260px;
+    /* border-radius: 20px; */
+    justify-content: space-around;
+    background-color: white;
+}
+
+#after-nav1>div {
+    /* border: 1px solid black; */
+    margin-left: 30px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 10px;
+}
+
+#after-nav1>div>img {
+    width: 70%;
+}
+
+#after-nav1>div>p {
+
+    margin-top: 9px;
+}
+
+#after-nav1>div:nth-child(2) {}

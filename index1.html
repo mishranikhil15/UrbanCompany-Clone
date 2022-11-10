@@ -6,251 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        .nav {
-            display: flex;
-            height: 80px;
-            background-color: aliceblue;
-            justify-content: space-between;
-            padding: 0px 150px 0px 50px;
-            align-items: center;
-            border: 1px solid black;
-        }
 
-        .nav>div {
-            display: flex;
-            justify-content: space-between;
-            /* width: 550px; */
-            border: 1px solid red;
-            height: 100%;
-            align-items: center;
-        }
-
-        .nav>div>h3 {
-            margin: 20px;
-        }
-
-        .nav>div>img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .top {
-            display: flex;
-            justify-content: space-evenly;
-            border: 1px solid black;
-        }
-
-        .top>div:nth-child(1) {
-            border: 1px solid red;
-            width: 50%;
-            /* justify-content: flex-end; */
-
-        }
-
-        .top>div>img {
-            width: 80%;
-            height: 100%;
-        }
-
-        .top>div:nth-child(2) {
-            border: 1px solid blue;
-            width: 45%;
-        }
-
-        .top-sec {
-            display: flex;
-            flex-direction: column;
-            background-color: black;
-            color: cadetblue;
-
-        }
-
-        .top-sec>div {
-            padding: 50px;
-        }
-
-        .top-sec>div:nth-child(2) {
-            border: 1px solid black;
-            width: 50%;
-            border-radius: 8px;
-            margin-left: 50px;
-            color: black;
-            background-color: white;
-
-        }
-
-        .top-sec>div:nth-child(2)>h4 {
-            margin-bottom: 20px;
-        }
-
-        #select {
-            width: 100%;
-            padding: 3px 20px 5px 3px;
-
-        }
-
-        .top-last {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 100px;
-            border: 1px solid blue;
-        }
-
-        .top-last-in {
-            display: flex;
-
-        }
-
-        .top-last-in>div {
-            margin: 10px 0px 10px 0px;
-        }
-
-        .top-last-in>div>img {
-            width: 50%;
-        }
-
-        .top-last>div>h1 {
-            padding-bottom: 40px;
-            font-size: 35px;
-        }
-
-        .top-last>div:nth-child(2)>div>img {
-
-            width: 25%;
-            padding-bottom: 40px;
-        }
-
-        .top-last>div:nth-child(2) {
-            background-color: rgb(239, 248, 248);
-            width: 35%;
-            height: 320px;
-            margin: 30px;
-            padding: 50px;
-        }
-
-        .top-last>div:nth-child(2)>div>h2 {
-            padding-bottom: 20px;
-        }
-
-        .medium {
-            display: flex;
-            justify-content: space-evenly;
-            border: 1px solid black;
-            margin-top: 15px;
-            height: auto;
-        }
-
-        .medium>div:nth-child(1) {
-            border: 1px solid red;
-            margin-top: 53px;
-            width: 45%;
-            padding: 90px;
-            /* margin-right: 180px; */
-
-        }
-
-        .medium>div:nth-child(1)>div {
-            padding: 30px;
-        }
-
-        .medium>div:nth-child(1)>div:nth-child(3)>img {
-            width: 30%;
-        }
-
-        label {
-            position: relative;
-            display: flex;
-        }
-
-        #mob>input {
-            /* border: none; */
-            padding: 15px;
-            width: 500px;
-        }
-
-        #mob>button {
-
-            padding: 8px;
-            /* padding: 0px 15px; */
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background-color: teal;
-            color: white;
-            text-align: center;
-            margin: 10px;
-            /* font-size: 20px; */
-        }
-
-        /* .medium>div:nth-child(2)>img:nth-child(2){
-            height: 80%; */
-        /* width: 40%;
-
-        } */
-
-        */
-
-        /* .medium>div:nth-child(2)>img:nth-child(1){
-            height: 80%;
-            width: 40%;
-
-        } */
-        .medium>div:nth-child(2) {
-            margin-top: 53px;
-            border: 1px solid blue;
-            width: 70%;
-        }
-
-        #medium-last {
-            display: flex;
-            justify-content: space-evenly;
-            border: 1px solid blue;
-            width: 100%;
-            margin-top: 53px;
-            /* height: auto; */
-        }
-        #medium-last>div:nth-child(1)>img{
-            width: 90%;
-            height: 90%;
-            padding-top: 30px;
-        }
-        #medium-last>div:nth-child(2)>img{
-            width: 90%;
-            height: 90%;
-            padding-top: 30px;
-        }
-    </style>
 </head>
 
 <body>
+
+    <!-- nav bar -->
     <div class="nav">
         <div>
-            <img src="C:\Users\HP\Downloads\urban-needs-low-resolution-logo-black-on-white-background.png" alt="">
+            <img src="./logo.png" alt="">
         </div>
         <div>
             <h3>Blog</h3>
             <!-- <h3>Register As A Professional</h3> -->
+            <!-- <i class="fa fa-user-o" aria-hidden="true"></i> -->
             <a href="">Register As A Professional</a>
             <h3>Login/Sign Up</h3>
             <!-- <a href="">Login/Sign Up</a> -->
         </div>
     </div>
+    <!-- top -->
     <div class="top">
         <div>
-            <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_19be5040.jpeg"
-                alt="">
+
         </div>
         <div class="top-sec">
             <div>
-                <h2>URBAN COMPANY</h2>
+                <h2>URBAN NEED'S</h2>
                 <h1>Quality home services, on demand</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, porro!</p>
 
@@ -258,9 +42,9 @@
             <div>
                 <h4>Where do we need a service?</h4>
                 <!-- <input type="text" placeholder="select your city"> -->
-                <select name="" id="select">
+                <select name="" id="select" onchange="changecity()">
                     <option value="sel">Select your city</option>
-                    <option value="del">New Delhi</option>
+                    <option value="del" id="new">New Delhi</option>
                     <option value="york">New York</option>
                     <option value="aus">Austin</option>
                 </select>
@@ -272,9 +56,10 @@
 
 
     </div>
+    <!-- top-last -->
     <div class="top-last">
         <div>
-            <h1>Why Urban Company?</h1>
+            <h1>Why Urban NEED'S?</h1>
             <div class="top-last-in">
                 <div>
                     <img src="https://res.cloudinary.com/urbanclap/image/upload/q_40,f_auto/categories/category_v2/category_29614d40.png"
@@ -322,7 +107,7 @@
         </div>
 
     </div>
-
+    <!-- medium -->
     <div class="medium">
         <div>
             <div>
@@ -356,7 +141,121 @@
 
         </div>
     </div>
+    <!-- bottom -->
+    <div class="bottom">
+        <div class="bottom-top">
+            <div>About Us</div>
+            <div>UC Impact</div>
+            <div>Terms & Conditions</div>
+            <div>Privacy Policy</div>
+            <div>Intereset-Based Advertising</div>
+            <div>Anti Discrimination Policy</div>
+            <div>PartnerWelfare Policy</div>
+            <div>Blog</div>
+            <div>Reviews</div>
+            <div>Near Me</div>
+            <div>Careers</div>
+            <div>Gift Cards</div>
+            <div>Contact Us</div>
+            <div>Quick Links</div>
+
+        </div>
+        <hr>
+        <div class="bottom-mid">
+            <h4>IND</h4>
+            <div class="bottom-mid-in">
+                <div>Agra</div>
+                <div>Ahmedabad</div>
+                <div>Alwar</div>
+                <div>Amritsar</div>
+                <div>Aurangabad</div>
+                <div>Banglore</div>
+                <div>Bhopal</div>
+                <div>Bhubaneswar</div>
+                <div>Chandigarh Tricity</div>
+                <div>Chennai</div>
+                <div>Coimbatore</div>
+                <div>Cuttack</div>
+                <div>Dehradun</div>
+                <div>Delhi Ncr</div>
+                <div>Guntur</div>
+                <div>Guwahati</div>
+                <div>Gwalior</div>
+                <div>Hyderabad</div>
+                <div>Indore</div>
+                <div>Jabalpur</div>
+                <div>Jaipur</div>
+                <div>Jamshedpur</div>
+                <div>Jodhpur</div>
+                <div>Kakinada</div>
+                <div>Kanpur</div>
+                <div>Karnal</div>
+                <div>Kochi</div>
+                <div>Kolkata</div>
+                <div>Kota</div>
+                <div>Lucknow</div>
+                <div>Ludhiana</div>
+                <div>Madurai</div>
+                <div>Meerut</div>
+                <div>Mumbai</div>
+                <div>Mysore</div>
+                <div>Nagpur</div>
+                <div>Nashik</div>
+                <div>Panipat</div>
+                <div>Patna</div>
+                <div>Prayagraj</div>
+                <div>Pune</div>
+                <div>Raipur</div>
+                <div>Rajamundry</div>
+                <div>Ranchi</div>
+                <div>Rohtak</div>
+                <div>Sonipat</div>
+                <div>Surat</div>
+                <div>Surat</div>
+                <div>Trivandrum</div>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom-last">
+            <div>
+                <img width="70%" src="./logo.png" alt="">
+            </div>
+            <div>
+                <h5> @ 2014-22 UrbanClap Technologies India Pvt.Ltd.</h5>
+            </div>
+            <div>
+                <img width="30%" src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" alt="">
+            </div>
+            <div>
+                <img width="20%" src="https://i.pinimg.com/736x/40/e2/6b/40e26beab6a4049d7d52cee459a7dbb8.jpg" alt="">
+            </div>
+            <div>
+                <img width="20%"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJZtY7RkyZiXJviuM6DbEp5mBzuMy0s4mFw&usqp=CAU"
+                    alt="">
+            </div>
+            <div>
+                <img width="20%"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEULCwv+/v4AAAAWFhb29vbr6+utra309PR/f3/5+fn8/PxKSkoICAihoaFGRkYuLi4nJycfHx+IiIgSEhIgICAwMDBCQkIlJSV4eHiQkJCoqKicnJy0tLTX19fIyMjOzs44ODhsbGxfX19RUVHi4uK+vr6WlpZgYGCVzLeXAAAE6klEQVR4nO3dC1fiOhSG4TYNhsTYtFZuXpkZ5fz/f3iyU3T0DFE43QK7871ruVTKYJ+VNi0Fx8KPusJ3hS9Gna8glB6E8oNQfhDKD0L5QSg/COUHofwglB+E8oNQfhDKD0L5QSg/COUHofwglB+E8oNQfhDKD0L5QXi0vNqRZ1i3sxAmzeVydXVxcXt1t1ldT5c/fv6qZzcdLRj44KcXxsFbTF8m5e70ZDqQeGph9C2fMrq+W9lCpe7Mp76yvJIsVGplv/DJFqr1cxS48QrV9MvxEy306movoFyhut8PKFaobvcEShXuuQ/KFar53kCZQq+eRy5Um/2BIoWq+vIwL114ccAQShSq4oARlClcHQIUKTxgIhUpVPVBQInCu9ELHw4TiruK4dXnM6l+eLndrFbXfavVppYm/HQ3tHfzPy+aDvyBxxd+8qzikS4Cc//A4wvzT+2f+HnFKYQv2U108Aa5s+MLs9d/h06amY4vzB4s5mMR5s7ZzLfsheckfPieITwj4ePohfejEeZeKbyA8H8GIXt/sfCbTmkg5A9C9iBkD0L2IGTvLz7iixTufM9oXri7wSvxjUJfTK+n/22Ze6fe4/KP+1I/z/mKsLrMYA7pZfTCzeiFy9ELL0cvrMYu1Gd9tDj0FftdPY9B6LTOv9t7+HXi0wu1ds5m37A//Fzu5EJr9WRinM4svpYv1NZYayc54Y8zE358qP2EWpuYzeyKw19UZBVWzYfH2k/oDBl15j0ow397jVPoQ3vz/sG+EqYp1Do9MdZktlIz/Ekjo9D7UJHQb7/7Smi1SUQdJ5vc4YLhZVM2oY+6JPRtRY/YtknobDza0RZIR73fRz66NW2c8VhR0gCm+9ntcpdupgY/d+IT+mZRNUkY2lnn29C2oapL2snSUMWV35a2T7p1+33vMub3ctffTncc+ra9gk3omy6iolAFvwi+C74JqqnL7VrTONFKR2xa8zh3GtNPovEWmkn7+/VjusWTcPjhkG0Mm6pRKgqL5qZVftGFm1AEEiaLSULTI/oBtbQsDqAt06fXEaSjo7Fvwn/ORtg1Dc2lJKQvmqIJxUzVLq0oHQviB1FKTcf2OHXqMunjMkdC+rof5bexTPvh+myEcegq2gXbKOySsAk+zjT2VUirrLfKNIZlP4bbkaOt84OQTlSdc93wlePaD4MPzawLNJhR2MZ55mbRXqaNM26m9r3QbbfBtIjGznwUunS7Lu3ETBiuoXIJ6XRGNQufhLS9+q5Tv0oXx8vR7EE7XNzByu0ZjOlnVNPD02xD9+k/nKXi2Oun8xEWcfoMoY1Hw9CfuS1CaOKWOpvV9Xpdz8K8ns3S5/UkTZ79YS+drcUBi0+f9H07r0Oo6/hv1vN6Pg+z+bw9q/9xIP3poXQu8/qdz13zfjsHde/ORnde8+ZYL7xuwR2E7EHIHoTsQcgehOxByB6E7EHIHoTsQcgehOxByB6E7EHIHoTsQcgehOxByB6E7EHIHoTsQcgehOxByB6E7EHIHoTsQcgehOxByB6E7EHIHoTsQcgehOxByB6E7B1fmPvN+/EI68vdMfyq4c5O8Pctcn3Tzzvh3z88UhDKD0L5QSg/COUHofwglB+E8oNQfhDKD0L5QSg/COUHofwglB+E8oNQfhDKD0L5QSg/COUH4Qgi4aiNcQy7aty1/wIHoWRbhVPX2wAAAABJRU5ErkJggg=="
+                    alt="">
+            </div>
+            <div>
+                <img width="100%"
+                    src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f907eb0.png" alt="">
+            </div>
+            <div>
+                <img width="100%"
+                    src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f741d10.png" alt="">
+            </div>
+            <div>
+                <img width="100%"
+                    src="https://images.urbanclap.com/image/upload/categories/category_v2/category_7f741d10.png" alt="">
+            </div>
+        </div>
+    </div>
 
 </body>
 
 </html>
+
+<script src="script1.js"></script>
