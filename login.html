@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            height: 50vh;
+            width: 25vw;
+            display: grid;
+            margin: auto;
+            place-content: center;
+            /* border: 1px solid red; */
+            text-align: center;
+            align-items: center;
+            /* background-color:  #216ce7; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 40px;
+            background-color: cornsilk;
+
+        }
+
+        .cont>input {
+            padding: 15px;
+            width: 85%;
+            margin: auto;
+            border-radius: 7px;
+            margin-top: 10px;
+            border: 1px solid lightseagreen;
+
+        }
+
+        button {
+            padding: 15px;
+            width: 95%;
+            /* width: 100%; */
+            margin: auto;
+            background-color: #216ce7;
+            color: black;
+            border: 1px solid lightseagreen;
+            margin-top: 30px;
+            border-radius: 7px;
+        }
+
+        .cont>p {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        a {
+            font-size: 25px;
+        }
+        h2{
+            background-color: teal;
+            /* width: 80%; */
+            
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <h1>SIGN IN</h1>
+        <input type="text" id="emai" placeholder="Email">
+        <input type="pass" id="pass" placeholder="Create Password(atleast 4 characters)">
+
+        <button>Log In</button>
+        <p>Don't have an account?<a href="signup.html">Create one now!</a></p>
+        <h2></h2>
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.querySelector("button").addEventListener("click", fun);
+
+    let arr = JSON.parse(localStorage.getItem("cart"));
+    function fun() {
+        let email = document.querySelector("#emai").value;
+        console.log(email);
+        let password = document.querySelector("#pass").value;
+        console.log(password);
+        let flag = "No";
+        for (let i = 0; i < arr.length; i++) {
+            if (JSON.parse(localStorage.getItem("cart"))[i].email == email && JSON.parse(localStorage.getItem("cart"))[i].password == password) {
+                flag = "True";
+                break;
+            }
+
+
+        }
+        if (flag == "True") {
+            document.querySelector("h2").innerText = "LOGGED IN";
+        
+
+         } else {
+            document.querySelector("h2").innerText = "Wrong Credentials";
+        }
+
+
+    }
+</script>
