@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 60vh;
+            width: 30vw;
+            display: grid;
+            margin: auto;
+            place-content: center;
+            /* border: 1px solid red; */
+            text-align: center;
+            align-items: center;
+            /* background-color:  #216ce7; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 40px;
+            background-color: cornsilk;
+
+        }
+
+        .container>input {
+            padding: 15px;
+            width: 100%;
+            margin: auto;
+            border-radius: 7px;
+            margin-top: 10px;
+            border: 1px solid lightseagreen;
+
+        }
+
+        button {
+            padding: 15px;
+            width: 80%;
+            width: 100%;
+            margin: auto;
+            background-color: #216ce7;
+            color: black;
+            border: 1px solid lightseagreen;
+        }
+
+        .container>p {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        a {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Create an account</h1>
+        <input type="text" name="" id="naam" placeholder="First Name">
+        <input type="text" name="" id="last" placeholder="Last Name">
+        <input type="text" id="ema" placeholder="Email">
+        <input type="password" id="password" placeholder="Create Password(atleast 4 characters)">
+        <input type="text" id="cnf" placeholder="Confirm Password">
+        <p>
+            <a href="login.html"> Already have an account?</a>
+        </p>
+
+        <button id="but"> Sign Up</button>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    //     document.querySelector("#but").addEventListener("click",function(){
+    // window.location
+    //     });
+    document.querySelector("button").addEventListener("click", fun2);
+
+    let arr = JSON.parse(localStorage.getItem("cart")) || [];
+
+    function fun2() {
+        let name = document.querySelector("#naam").value;
+        let last = document.querySelector("#last").value;
+        let email = document.querySelector("#ema").value;
+        let password = document.querySelector("#password").value;
+        let confirm = document.querySelector("#cnf").value;
+        if (password !== confirm) {
+            alert("Wrong Password ");
+            return;
+        } else {
+            let dataobj = {
+                name,
+                last,
+                email,
+                password,
+                confirm,
+
+            };
+            arr.push(dataobj);
+            localStorage.setItem("cart", JSON.stringify(arr))
+            window.location.href = "login.html";
+        }
+
+
+    }
+</script>
