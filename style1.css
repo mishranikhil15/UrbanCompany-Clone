@@ -205,6 +205,39 @@ a {
     width: 90%;
     height: 90%;
 }
+#bit8{
+    padding: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    background-color: teal;
+    color: brown;
+    border-radius: 10px;
+    /* border: 0px solid white; */
+    
+    
+}
+#bit8:hover {
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+#bit7{
+    padding: 20px;
+    margin-right: 115px;
+    /* margin-left: 15px; */
+    font-size: 20px;
+    background-color: teal;
+    color: brown;
+    border-radius: 10px;
+    /* border: 0px solid white; */
+    
+    
+}
+#bit7:hover {
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
 #mid3{
     text-align: center;
 }

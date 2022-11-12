@@ -7,7 +7,7 @@
 
 .nav {
     display: flex;
-    height: 80px;
+    height: 110px;
     /* background-color: aliceblue; */
     justify-content: space-between;
     padding: 0px 150px 0px 50px;
@@ -15,6 +15,9 @@
     /* border: 1px solid black; */
     background-color: black;
     color: whitesmoke;
+}
+.nav>div:first-child{
+    width: 10%;
 }
 
 .nav>div {
@@ -59,7 +62,7 @@
     background-size: contain;
     background-position-x: 15%;
     background-repeat: no-repeat;
-    padding: 60px;
+    padding: 80px;
 }
 
 .top>div:nth-child(2) {
