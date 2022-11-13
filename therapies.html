@@ -7,31 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container{
+        #container {
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4, 1fr);
             grid-template-rows: auto;
             /* gap: px; */
         }
-        #container>div>img{
+
+        #container>div>img {
             width: 70%;
         }
-        #container>div{
+
+        #container>div {
             text-align: center;
         }
-        .video{
+
+        .video {
             display: flex;
-           justify-content: space-evenly;
-           margin: 60px 0px 60px 0px;
+            justify-content: space-evenly;
+            margin: 60px 0px 60px 0px;
         }
-        .video>div:nth-child(1){
+
+        .video>div:nth-child(1) {
             margin: 70px;
         }
-        .video input{
+
+        .video input {
             padding: 15px;
             width: 500px;
         }
-        .video button{
+
+        .video button {
             padding: 15px;
             width: 170px;
             background-color: antiquewhite;
@@ -39,33 +45,62 @@
             border: 0px;
             border-radius: 7px;
         }
-        .video h1{
+
+        .video h1 {
             font-size: 45px;
         }
-        hr{
+
+        hr {
             margin-bottom: 60px;
         }
-
+        #sort{
+            padding: 15px;
+            margin: 30px;
+            margin-left: 80px;
+            background-color: aliceblue;
+            font-size: 25px;
+        }
+        #package{
+            padding: 15px;
+            margin: 30px;
+            margin-left: 80px;
+            background-color: aliceblue;
+            font-size: 25px;
+        }
     </style>
 </head>
 
 <body>
 
-<div class="video">
-    <div>
-        <button>UC Safe</button>
-        <h1>Massage for Men</h1>
-        <p>Rating-4.85(156k)</p>
-        <input type="text" placeholder="Massage Guide  >">
-    </div>
+    <div class="video">
+        <div>
+            <button>UC Safe</button>
+            <h1>Massage for Men</h1>
+            <p>Rating-4.85(156k)</p>
+            <input type="text" placeholder="Massage Guide  >">
+        </div>
 
-    <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XqIAhncVLrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XqIAhncVLrA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
     </div>
-  
-</div>
-<hr>
-    
+    <hr>
+    <select id="sort" onchange="handleSort()">
+        <option value="">Sort By Price</option>
+        <option value="asc">LOW TO HIGH</option>
+        <option value="desc">HIGH TO LOW</option>
+    </select>
+    <select id="package" onchange="handlePackage()">
+        <option value="Normal">Normal</option>
+        <option value="Medium">Medium</option>
+        <option value="Users Choice">Users Choice</option>
+        <option value="Favourites">Favourites</option>
+        <option value="Premium">Premium</option>
+    </select>
     <div id="container">
     </div>
 </body>
@@ -81,26 +116,60 @@
         .then((data) => {
             bag = data;
             console.log(data);
-            displaycard(data);
+            displaycard(bag);
         });
+
+    // let sor = document.querySelector("#sort_price");
+    // sor.addEventListener("change", handleSort);
+    function handleSort() {
+        let sel = document.querySelector("#sort").value;
+        console.log(sel);
+
+        if (sel == "") {
+            displayCard(bag);
+        }
+        if (sel == "asc") {
+            bag.sort((a, b) => a.price - b.price);
+
+        } if (sel == "desc") {
+            bag.sort((a, b) => b.price - a.price);
+        }
+        // handleRegion(bag);
+        displaycard(bag);
+
+    }
+
+    function handlePackage(){
+        let selected=document.querySelector("#package").value;
+        let filtdata=bag.filter(function(elem){
+            return elem.package==selected;
+        });
+        displaycard(filtdata);
+    }
+
+
+
+
+
     function displaycard(data) {
+        document.querySelector("#container").innerHTML = "";
         data.forEach(function (elem) {
             let div = document.createElement("div");
             let img = document.createElement("img");
-            
-           img.setAttribute("src", elem.link);
-           let title=document.createElement("h2");
-           title.innerText=elem.title;
-           let rating=document.createElement("p");
-           rating.innerText=elem.rating;
-           let price=document.createElement("p");
-           price.innerText=elem.price;
-           let description= document.createElement("p");
-           description.innerText=elem.description;
-           let benefits = document.createElement("p");
-           benefits.innerText=elem.benefits;
-           div.append(img,title,rating,price,description,benefits);
-           document.querySelector("#container").append(div);
+
+            img.setAttribute("src", elem.link);
+            let title = document.createElement("h2");
+            title.innerText = elem.title;
+            let rating = document.createElement("p");
+            rating.innerText = elem.rating;
+            let price = document.createElement("p");
+            price.innerText = elem.price;
+            let description = document.createElement("p");
+            description.innerText = elem.description;
+            let benefits = document.createElement("p");
+            benefits.innerText = elem.benefits;
+            div.append(img, title, rating, price, description, benefits);
+            document.querySelector("#container").append(div);
 
         });
     }

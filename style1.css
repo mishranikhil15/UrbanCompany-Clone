@@ -15,9 +15,20 @@
     /* background-position: center top; */
 }
 
+/* #background_img img {
+    width: 100%;
+    display: block;
+    transition: transform 2s;
+}
+
+#background_img:hover img {
+    transition:scale(1.3);
+    cursor: pointer;
+} */
+
 #nav {
     display: flex;
-    height: 90px;
+    height: 100px;
     /* background-color: aliceblue; */
     justify-content: space-between;
     padding: 0px 150px 0px 50px;
@@ -29,9 +40,26 @@
     text-align: center;
 }
 
+hr {
+    margin: 25px;
+    padding: 6px;
+    background-color: gainsboro;
+}
+
 a {
     color: white;
 }
+
+#go1:hover {
+    /* background-color: aliceblue; */
+    cursor: pointer;
+}
+
+#nav>:first-child {
+    width: 30%;
+    padding: 40px;
+}
+
 
 #nav>div {
     display: flex;
@@ -47,17 +75,21 @@ a {
 }
 
 #nav>div>img {
-    width: 15%;
-    height: 100%;
+    width: 30%;
+    height: 70%;
+    ;
 }
-#after-nav{
+
+#after-nav {
     text-align: center;
 }
-#after-nav>div{
+
+#after-nav>div {
     margin-top: 80px;
-    
+
 }
-#after-nav>div>h1{
+
+#after-nav>div>h1 {
     font-size: 80px;
     color: whitesmoke;
 }
@@ -69,18 +101,20 @@ a {
     text-align: center;
     /* border: 1px soild red; */
     margin-right: 500px;
-    
+
 }
-#after-nav0>div>input{
+
+#after-nav0>div>input {
     padding: 20px;
     width: 300%;
     margin-right: 50px;
-    
+
 }
-#sel{
-    padding: 20px; 
+
+#sel {
+    padding: 20px;
     margin-right: 20px;
-    
+
 }
 
 /* 
@@ -102,9 +136,10 @@ a {
     border: 1px solid black;
 
 } */
-#mid-text{
+#mid-text {
     text-align: center;
 }
+
 #after-nav1 {
     /* border: 1px solid red; */
     height: 170px;
@@ -205,7 +240,17 @@ a {
     width: 90%;
     height: 90%;
 }
-#bit8{
+#mid2>div>img {
+    width: 90%;
+    height: 90%;
+}
+.hov:hover{
+    width:40%;
+    cursor: pointer;
+    
+}
+
+#bit8 {
     padding: 20px;
     margin-right: 15px;
     margin-left: 15px;
@@ -214,14 +259,16 @@ a {
     color: brown;
     border-radius: 10px;
     /* border: 0px solid white; */
-    
-    
+
+
 }
+
 #bit8:hover {
     background-color: blanchedalmond;
     cursor: pointer;
 }
-#bit7{
+
+#bit7 {
     padding: 20px;
     margin-right: 115px;
     /* margin-left: 15px; */
@@ -230,17 +277,19 @@ a {
     color: brown;
     border-radius: 10px;
     /* border: 0px solid white; */
-    
-    
+
+
 }
+
 #bit7:hover {
     background-color: blanchedalmond;
     cursor: pointer;
 }
 
-#mid3{
+#mid3 {
     text-align: center;
 }
+
 #mid3>div {
     display: flex;
     justify-content: center;
@@ -258,9 +307,18 @@ a {
     font-size: 40px;
     margin: 80px;
 }
-#mid4{
+.hov1:hover{
+    width:37%;
+    cursor: pointer;
+}
+.hov2:hover{
+    width:35%;
+    cursor: pointer;
+}
+#mid4 {
     text-align: center;
 }
+
 #mid4>div {
     display: flex;
     justify-content: center;
@@ -285,9 +343,14 @@ a {
     margin: 5px 0px 60px 0px;
     font-size: 26px;
 }
-#mid5{
+.hov3:hover{
+    width: 32%;
+    cursor: pointer;
+}
+#mid5 {
     text-align: center;
 }
+
 #mid5>div {
     display: flex;
     justify-content: space-between;
@@ -312,13 +375,19 @@ a {
     margin: 5px 0px 60px 0px;
     font-size: 26px;
 }
-#mid5>h1{
+
+#mid5>h1 {
     margin-top: 60px;
 }
-#mid6{
+.hov4:hover{
+    width: 32%;
+    cursor: pointer;
+}
+#mid6 {
     /* border: 1px solid red; */
     text-align: center;
 }
+
 #mid6>div {
     display: flex;
     justify-content: center;
@@ -338,7 +407,8 @@ a {
     margin-top: 80px;
 
 }
-#mid6>h1{
+
+#mid6>h1 {
     margin-top: 60px;
 }
 
@@ -346,12 +416,17 @@ a {
     margin: 5px 0px 60px 0px;
     font-size: 26px;
 }
-#mid7{
+.hov5:hover{
+    width: 110%;
+    cursor: pointer;
+}
+#mid7 {
     text-align: center;
 }
+
 #mid7>div {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     height: 400px;
 
@@ -363,46 +438,39 @@ a {
     border-radius: 5px; */
     margin: 0px;
 }
+
 /* #mid7>div>div>img:nth-child(1){
 width: 100%;
 height: 60%;
 } */
-#mid7>h1{
+#mid7>h1 {
     margin-top: 60px;
     margin-bottom: 50px;
     font-size: 40px;
-    
+
 }
-#mid7 h5{
+
+#mid7 h5 {
     font-size: 21px;
 }
 
-#last{
-    /* height: 100px; */
-    /* border: 1px solid red; */
-}
-#last>img{
+#last>img {
     width: 100%;
     height: 200px;
     align-items: center;
 }
-#lastone{
-    /* height: 200px; */
-    /* border: 1px solid red; */
-}
-#lastone>img{
+
+#lastone>img {
     width: 100%;
     height: 250px;
 }
-#lasttwo{
-    /* height: 200px; */
-    /* border: 1px solid red; */
-}
-#lasttwo>img{
+
+#lasttwo>img {
     width: 100%;
     height: 250px;
 }
-.bottom{
+
+.bottom {
     background-color: black;
     color: whitesmoke;
     text-align: start;
@@ -416,7 +484,7 @@ height: 60%;
     margin-left: 85px;
     padding: 30px;
     /* font-size: 20px; */
-    
+
 }
 
 .bottom-mid {
@@ -436,13 +504,26 @@ height: 60%;
     gap: 15px;
     font-size: 20px;
 }
-.bottom-last{
-    
+
+.bottom-last {
+
     display: grid;
-    grid-template-columns: repeat(11,1fr);
-    gap: 10px;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 90px;
     height: auto;
     align-items: center;
     padding: 30px;
     margin-left: 80px;
+}
+.bottom-last>div>img{
+    width: 50%;
+}
+.bottom-last>div:nth-child(7)>img{
+    width: 150%;
+}
+.bottom-last>div:nth-child(8)>img{
+    width: 150%;
+}
+.bottom-last>div:nth-child(9)>img{
+    width: 150%;
 }
