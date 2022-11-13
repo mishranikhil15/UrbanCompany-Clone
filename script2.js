@@ -3,7 +3,12 @@ document.querySelector("#mens").addEventListener("click", fun);
 function fun() {
     window.location.href = "therapies.html";
 }
-
+document.querySelector("#go1").addEventListener("click",change)
+function change() {
+    // let change = document.querySelector("#go1").value;
+    window.location.href = "index.html";
+    // console.log(change);
+}
 
 let data = [
     {
@@ -128,3 +133,7 @@ function backward() {
     image_4(data[d]);
 
 }
+
+let arr=[
+    
+]

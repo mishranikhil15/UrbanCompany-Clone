@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    color: white;
+}
 
 .nav {
     display: flex;
@@ -270,7 +273,7 @@ label {
 .bottom-last{
     
     display: grid;
-    grid-template-columns: repeat(11,1fr);
+    grid-template-columns: repeat(10,1fr);
     gap: 10px;
     height: auto;
     align-items: center;

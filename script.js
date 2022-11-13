@@ -7,4 +7,8 @@ function changecity() {
     console.log(change);
 }
 // window.location.href = "newdelhi.html";
-
+function change() {
+    let change = document.querySelector("#go").value;
+    window.location.href = "index.html";
+    console.log(change);
+}
